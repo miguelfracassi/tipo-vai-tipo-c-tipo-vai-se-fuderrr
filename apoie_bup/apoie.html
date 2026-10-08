@@ -1,0 +1,50 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Apoie o Bup</title><meta name="description" content="Apoie o Bup com R$ 7,08 e ajude a construir o novo site dele."><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Silkscreen:wght@400;700&display=swap"><style>
+:root{--ink:#161616;--b:#3b6cff}*{box-sizing:border-box}[hidden]{display:none!important}
+body{margin:0;min-height:100vh;display:grid;place-items:center;padding:24px 16px;font-family:'DM Sans',system-ui,sans-serif;color:var(--ink);background:radial-gradient(520px 420px at 4% 4%,#ff9fd2aa,transparent 70%),radial-gradient(520px 520px at 100% 40%,#8fb3ffaa,transparent 70%),radial-gradient(640px 360px at 40% 100%,#ffb36baa,transparent 70%),#fff;background-attachment:fixed}
+.ap{width:100%;max-width:520px;text-align:center}.logo{font-family:Silkscreen,monospace;font-weight:700;font-size:2rem;letter-spacing:.08em;margin:0 0 16px;display:block;color:var(--ink);text-decoration:none}
+.glass{background:linear-gradient(135deg,#ffffffd9,#ffffff99);border:1px solid #fff;border-radius:36px;padding:34px 28px;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:0 14px 40px #1a1a4a26,inset 0 1px 0 #fff}
+.kicker{display:inline-block;background:#ffffffb3;border:1px solid #fff;border-radius:999px;padding:6px 16px;font-weight:700;font-size:.85rem;box-shadow:0 4px 12px #0000001a}
+h1{margin:10px 0}p{line-height:1.55}.price{font-family:Silkscreen,monospace;font-size:2.6rem;margin:6px 0 14px}
+.btn{font:inherit;font-weight:700;cursor:pointer;border:2px solid var(--ink);border-radius:999px;padding:13px 24px;background:var(--ink);color:#fff;text-decoration:none;display:inline-block;transition:transform .2s}.btn:hover{transform:translateY(-2px)}.btn.alt{background:#fff;color:var(--ink)}.btn:disabled{opacity:.6}
+.btn:focus-visible,input:focus-visible{outline:3px solid var(--b);outline-offset:3px}
+form{text-align:left}.field{display:grid;gap:6px;font-weight:700;font-size:.9rem;margin-bottom:14px}
+input,textarea{font:inherit;width:100%;border:1px solid #fff;background:#ffffffe6;border-radius:999px;padding:14px 22px;box-shadow:inset 0 2px 6px #0000001a}
+.msg{min-height:1.3em;font-weight:700;margin:10px 0 0;color:#c62828}
+.qr{width:240px;height:240px;border-radius:24px;background:#fff;padding:10px;box-shadow:0 10px 30px #1a1a4a26;margin:10px auto;display:block}
+.cc{font-size:.8rem;border-radius:20px;padding:12px 16px;margin:10px 0;resize:none}
+.wait{color:#555;font-weight:700;animation:bl 1.4s ease-in-out infinite}@keyframes bl{50%{opacity:.4}}
+.face{width:120px;height:120px;margin:0 auto 10px;display:block;animation:bob 2s ease-in-out infinite;filter:drop-shadow(0 8px 10px #0003)}@keyframes bob{50%{transform:translateY(-6px)}}
+.hp{position:fixed;pointer-events:none;font-size:1.6rem;animation:up 2.4s ease-out forwards;z-index:60}@keyframes up{to{transform:translateY(-70vh) rotate(25deg);opacity:0}}
+</style></head><body><div class="ap"><a class="logo" href="/">BUP</a>
+
+<div class="glass" id="s1"><span class="kicker">Apoie o Bup</span><h1>Ajude a criar o novo site do Bup</h1><div class="price">R$ 7,08</div>
+<p>Com um Pix de R$ 7,08 você apoia o desenvolvimento do novo site do Bup. Diga seu nome para a gente agradecer direitinho.</p>
+<form id="f"><label class="field">Seu nome<input id="n" maxlength="40" required autocomplete="name" placeholder="Como podemos te chamar?"></label><button class="btn" id="go" type="submit" style="width:100%">Continuar</button><p class="msg" id="e" role="alert"></p></form></div>
+
+<div class="glass" id="s2" hidden><span class="kicker">Pague com Pix</span><h1>Quase lá, <span id="nm"></span>!</h1><div class="price">R$ 7,08</div>
+<img class="qr" id="qr" alt="QR Code do Pix"><p>Escaneie o QR Code no app do seu banco ou use o Pix copia e cola:</p>
+<textarea class="cc" id="cc" readonly rows="3" aria-label="Pix copia e cola"></textarea>
+<button class="btn alt" id="cp" type="button" style="width:100%">Copiar código Pix</button>
+<p class="wait" id="w">Aguardando o pagamento...</p><p class="msg" id="e2" role="alert"></p></div>
+
+<div class="glass" id="s3" hidden><svg class="face" viewBox="-6 -6 132 132" aria-hidden="true"><defs><radialGradient id="g" cx=".35" cy=".3"><stop offset="0" stop-color="#ffd3e8"/><stop offset="1" stop-color="#ff7ab8"/></radialGradient><path id="h" d="M10 18C2 12 0 8 0 5a5 5 0 0 1 10-2 5 5 0 0 1 10 2c0 3-2 7-10 13z" fill="#e5195f"/></defs><circle cx="60" cy="60" r="58" fill="#fff"/><circle cx="60" cy="60" r="52" fill="url(#g)"/><use href="#h" x="31" y="44"/><use href="#h" x="69" y="44"/><path d="M44 76q16 16 32 0" fill="none" stroke="#3a2a1a" stroke-width="5" stroke-linecap="round"/></svg><h1>Obrigado, <span id="nm2"></span>!</h1>
+<p>Seu apoio de R$ 7,08 foi aprovado. Você está ajudando a construir o novo site do Bup. O Bup te manda um abraço!</p><div class="btns" style="justify-content:center"><a class="btn" href="/">Voltar ao início</a></div></div>
+
+</div><script>
+const $=i=>document.getElementById(i);let tm,name='';
+const show=n=>['s1','s2','s3'].forEach((s,i)=>$(s).hidden=i+1!==n);
+$('f').onsubmit=async e=>{e.preventDefault();const b=$('go');b.disabled=true;b.textContent='Gerando Pix...';$('e').textContent='';
+try{const r=await fetch('/api/apoie',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:$('n').value})}),d=await r.json().catch(()=>({}));
+if(!r.ok)throw new Error(d.error||'Algo deu errado.');
+name=$('n').value.trim();$('nm').textContent=name.split(' ')[0];$('qr').src='data:image/png;base64,'+d.qrBase64;$('cc').value=d.qr;show(2);poll(d.id,Date.now())}
+catch(x){$('e').textContent=x.message||'Sem conexão. Tente de novo.'}b.disabled=false;b.textContent='Continuar'};
+$('cp').onclick=async()=>{const t=$('cc').value;try{await navigator.clipboard.writeText(t)}catch(x){$('cc').select();document.execCommand('copy')}$('cp').textContent='Copiado!';setTimeout(()=>$('cp').textContent='Copiar código Pix',2000)};
+function poll(id,t0){clearTimeout(tm);tm=setTimeout(async()=>{
+ if(Date.now()-t0>31*60000){$('w').textContent='O Pix expirou. Recarregue a página para gerar outro.';return}
+ try{const d=await(await fetch('/api/apoie?id='+id,{cache:'no-store'})).json();
+  if(d.status==='approved')return thanks();
+  if(['cancelled','rejected','expired'].includes(d.status)){$('w').textContent='Pagamento não concluído. Recarregue a página para tentar de novo.';return}}catch(x){}
+ poll(id,t0)},4000)}
+function thanks(){$('nm2').textContent=name.split(' ')[0];show(3);
+ for(let i=0;i<18;i++)setTimeout(()=>{const h=document.createElement('span');h.className='hp';h.textContent='💛';h.style.left=Math.random()*95+'vw';h.style.bottom='-30px';document.body.append(h);setTimeout(()=>h.remove(),2500)},i*120)}
+</script></body></html>
